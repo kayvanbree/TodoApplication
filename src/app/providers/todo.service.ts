@@ -12,6 +12,6 @@ export class TodoService {
   constructor(private http: HttpClient) { }
 
   public getAll(): Observable<Todo[]> {
-    this.http.get<Todo[]>(this.baseUrl);
+    return this.http.get<Todo[]>(this.baseUrl);
   }
 }
