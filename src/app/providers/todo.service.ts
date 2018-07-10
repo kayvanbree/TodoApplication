@@ -14,4 +14,8 @@ export class TodoService {
   public getAll(): Observable<Todo[]> {
     return this.http.get<Todo[]>(this.baseUrl);
   }
+
+  public update(id: number, todo: Todo): Observable<any> {
+    return this.http.put(this.baseUrl + '/' + id, todo);
+  }
 }

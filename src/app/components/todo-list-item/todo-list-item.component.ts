@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Todo} from '../../definitions/todo';
+import {TodoService} from '../../providers/todo.service';
 
 @Component({
   selector: 'app-todo-list-item',
@@ -10,8 +11,13 @@ export class TodoListItemComponent implements OnInit {
 
   @Input() todo: Todo;
 
-  constructor() { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
+  }
+
+  onCheckboxChange() {
+    console.log(this.todo);
+    this.todoService.update(this.todo.id, this.todo).subscribe();
   }
 }

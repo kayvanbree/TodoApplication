@@ -7,6 +7,7 @@ import {MatButtonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatToo
 import {HttpClientModule} from '@angular/common/http';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListItemComponent } from './components/todo-list-item/todo-list-item.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TodoListItemComponent } from './components/todo-list-item/todo-list-ite
     MatButtonModule,
     HttpClientModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
