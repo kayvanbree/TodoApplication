@@ -1,6 +1,6 @@
 <mat-card>
   <mat-checkbox
-    [checked]="todo.completed"
+    [(ngModel)]="todo.completed"
     (change)="onCheckboxChange()"
   ></mat-checkbox>
   {{todo.title}}
