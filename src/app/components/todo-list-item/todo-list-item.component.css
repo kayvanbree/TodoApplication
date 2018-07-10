@@ -1,0 +1,11 @@
+.incomplete {
+  border-left: 5px red solid;
+}
+
+.complete {
+  border-left: 5px green solid;
+}
+
+.list-item {
+  margin: 3px;
+}
