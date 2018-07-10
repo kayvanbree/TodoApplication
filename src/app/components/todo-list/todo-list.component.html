@@ -1,3 +1,5 @@
-<mat-card *ngFor="let todo of todoList">
-  {{todo.title}}
-</mat-card>
+<app-todo-list-item
+  *ngFor="let todo of todoList"
+  [todo]="todo"
+>
+</app-todo-list-item>
