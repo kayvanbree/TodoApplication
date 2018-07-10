@@ -1,4 +1,7 @@
 <mat-card>
-  <mat-checkbox [checked]="todo.completed"></mat-checkbox>
+  <mat-checkbox
+    [checked]="todo.completed"
+    (change)="onCheckboxChange()"
+  ></mat-checkbox>
   {{todo.title}}
 </mat-card>
