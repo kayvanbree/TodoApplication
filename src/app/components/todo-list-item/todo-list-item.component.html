@@ -1,4 +1,7 @@
-<mat-card>
+<mat-card
+  class="list-item"
+  [ngClass]="{'complete': todo.completed, 'incomplete': !todo.completed}"
+>
   <mat-checkbox
     [(ngModel)]="todo.completed"
     (change)="onCheckboxChange()"
