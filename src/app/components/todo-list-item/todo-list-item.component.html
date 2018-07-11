@@ -5,6 +5,8 @@
   <mat-checkbox
     [(ngModel)]="todo.completed"
     (change)="onCheckboxChange()"
+    class="checkbox"
   ></mat-checkbox>
-  {{todo.title}}
+  <span class="title">{{todo.title}}</span>
+  <button mat-icon-button><mat-icon>delete</mat-icon></button>
 </mat-card>
