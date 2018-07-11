@@ -8,5 +8,5 @@
     class="checkbox"
   ></mat-checkbox>
   <span class="title">{{todo.title}}</span>
-  <button mat-icon-button><mat-icon>delete</mat-icon></button>
+  <button mat-icon-button (click)="onDelete()"><mat-icon>delete</mat-icon></button>
 </mat-card>
