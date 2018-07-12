@@ -9,13 +9,21 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListItemComponent } from './components/todo-list-item/todo-list-item.component';
 import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import {RouterModule, Routes} from '@angular/router';
+import { TodoComponent } from './components/todo/todo.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'todo/:id',      component: TodoComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     TodoListItemComponent,
-    HomeComponent
+    HomeComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +34,8 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
     MatCardModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
