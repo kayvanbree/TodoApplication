@@ -7,5 +7,18 @@
 }
 
 .list-item {
-  margin: 3px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
 }
+
+.title {
+  flex: 1 0 auto;
+  margin: 10px;
+}
+
+mat-checkbox.checkbox {
+  margin-top: 10px;
+}
+
+

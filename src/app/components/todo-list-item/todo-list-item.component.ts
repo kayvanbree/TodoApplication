@@ -20,4 +20,9 @@ export class TodoListItemComponent implements OnInit {
     console.log(this.todo);
     this.todoService.update(this.todo.id, this.todo).subscribe();
   }
+
+  onDelete() {
+    console.log(this.todo);
+    this.todoService.delete(this.todo.id).subscribe();
+  }
 }

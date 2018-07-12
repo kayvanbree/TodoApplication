@@ -18,4 +18,8 @@ export class TodoService {
   public update(id: number, todo: Todo): Observable<any> {
     return this.http.put(this.baseUrl + '/' + id, todo);
   }
+
+  public delete(id: number): Observable<any> {
+    return this.http.delete(this.baseUrl + '/' + id);
+  }
 }
