@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import { TodoComponent } from './components/todo/todo.component';
+import { SomeComponentComponent } from './components/some-component/some-component.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     TodoListComponent,
     TodoListItemComponent,
     HomeComponent,
-    TodoComponent
+    TodoComponent,
+    SomeComponentComponent
   ],
   imports: [
     BrowserModule,
