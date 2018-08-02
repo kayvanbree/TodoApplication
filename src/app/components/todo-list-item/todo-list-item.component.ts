@@ -7,22 +7,13 @@ import {TodoService} from '../../providers/todo.service';
   templateUrl: './todo-list-item.component.html',
   styleUrls: ['./todo-list-item.component.css']
 })
-export class TodoListItemComponent implements OnInit {
-
+export class TodoListItemComponent {
   @Input() todo: Todo;
 
   constructor(private todoService: TodoService) { }
 
-  ngOnInit() {
-  }
-
   onCheckboxChange() {
     console.log(this.todo);
     this.todoService.update(this.todo.id, this.todo).subscribe();
-  }
-
-  onDelete() {
-    console.log(this.todo);
-    this.todoService.delete(this.todo.id).subscribe();
   }
 }

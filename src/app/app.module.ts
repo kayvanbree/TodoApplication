@@ -8,12 +8,14 @@ import {HttpClientModule} from '@angular/common/http';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListItemComponent } from './components/todo-list-item/todo-list-item.component';
 import {FormsModule} from '@angular/forms';
+import { TodoDeleteButtonComponent } from './components/todo-delete-button/todo-delete-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    TodoListItemComponent
+    TodoListItemComponent,
+    TodoDeleteButtonComponent
   ],
   imports: [
     BrowserModule,
